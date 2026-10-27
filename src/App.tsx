@@ -182,10 +182,20 @@ export default function App() {
   return (
     <main className={`site ${dark ? 'dark-mode' : ''}`}>
       <nav className="navbar">
-        <a className="brand" href="#home" onClick={closeMenu} aria-label="Olive Tree Hub home">
-          <span className="brand-mark">O<span>.</span></span>
-          <span className="brand-name">olive tree <b>hub</b></span>
-        </a>
+        
+<a
+  className="brand"
+  href="#home"
+  onClick={closeMenu}
+  aria-label="Olive Tree Hub home"
+>
+  <img
+    src="/olive-tree-logo.svg"
+    alt="Olive Tree Hub"
+    className="brand-logo"
+  />
+</a>
+
 
         <button
           className="mobile-menu-toggle"
